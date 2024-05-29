@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  {useState} from "react";
 import {
   calculateTotalDuration,
   fetchPlaylistData,
@@ -169,7 +169,7 @@ const App = () => {
         </div>
         : null
         }
-        <div className="flex flex-col gap-6 mt-6 mb-6">
+        <div className="flex flex-col gap-6 mt-6 mb-6 cursor-pointer">
           {playlistData &&
             playlistData.items.map((video) => (
               <div
@@ -190,7 +190,6 @@ const App = () => {
               </div>
             ))}
         </div>
-      <p className={`w-full text-center text-xl ${playlistData ? null : "absolute bottom-6 left-0"}`}>made in ❤️ with <a href="https://github.com/alok-x0s1" target="_blank" className="hover:underline text-red-600">@lokYadav</a> | All rights reserved.</p>
       </div>
     </div>
   );
