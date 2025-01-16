@@ -165,7 +165,7 @@ const App = () => {
             <option value="1.75 x">1.75 x</option>
             <option value="2 x">2 x</option>
           </select>
-          <div>{formatTime((totalDuration / watchSpeed.split(" ")[0]).toFixed(2))} Total time it takes to finish this playlist.<</div>
+          <div>{formatTime((totalDuration / watchSpeed.split(" ")[0]).toFixed(2))} Total time it takes to finish this playlist.</div>
         </div>
         : null
         }
